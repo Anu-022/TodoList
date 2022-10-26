@@ -1,0 +1,80 @@
+* {
+    margin:0;
+    padding: 0;
+}
+:root {
+    --primary-color: #0039e9;
+    --secondary-color:#fb9b2a;
+    --text-color: #121314;
+}
+main {
+    color: var(--text-color);
+}
+.todo__header {
+    margin-top: 50px;
+    text-align: center;
+    color: var(--primary-color);
+}
+.todo {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.todo__form {
+  background-color: var(--secondary-color);  
+  width: 600px;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.todo__input {
+    width: 400px;
+    height: 30px;
+    padding: 5px 7px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    outline: none;
+}
+.submit-btn {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 8px;
+    border-radius: 5px;
+}
+.add_todo_task {
+    width: 100%;
+}
+.todo__input__wrapper {
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.todo_list_items {
+    display: flex;
+    min-width: 300px;
+    margin-bottom: 15px;
+    border: 1px solid #eee;
+    padding: 10px 90px;
+}
+.todo_list_items > .todo_list_tasks {
+    display: flex;
+    width: 100%;  
+}
+.todo_list_items .todo__text {
+margin-left: 10px;
+margin-right: 100px;
+width: 200px;
+}
+.todo-actions {
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+}
+.edit-btn {
+    background-color: var(--primary-color);
+}
+.delete-btn {
+    background-color: var(--secondary-color);
+}

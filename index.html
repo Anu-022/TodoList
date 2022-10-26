@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>My Todo List</title>
+</head>
+<body>
+    <main>
+        <h1 class="todo__header">My Daily To-do List</h1>
+        <section class="todo__form">
+                <form class="add_todo_task" id="form">
+                    <div class="todo__input__wrapper">
+                        <input required type="text" class="todo__input" name="todo__input" placeholder="Enter your todo item">
+                        <button type="submit" class="submit-btn">Add Todo</button>
+                    </div>    
+                </form>
+        </section> 
+        <section class="todo">
+            <div>
+                <ul id="todo_list">
+                    <!------todo items will be displayed here-->
+                </ul>
+            </div>
+        </section> 
+            
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>
