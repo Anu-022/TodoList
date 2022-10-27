@@ -1,19 +1,21 @@
 // function to remove todo
-function deleteToDo() {
-    console.log(this.parentElement.parentElement.parentElement);
-    const li = this.parentElement.parentElement.parentElement;
+function deleteToDo(eventObject) {
+    const deleteBtn = eventObject.target;
+    console.log(deleteBtn);
+    const li = deleteBtn.parentElement.parentElement.parentElement;
     li.remove();
-}
+} 
 
 //function to edit todo
- function editTodo () {
+ function editTodo (eventObject) {
+   const editBtn = eventObject.target;
    const inputElement = document.querySelector('.todo__input');
-   inputElement.value = this.parentElement.parentElement.children[1].innerHTML;
-   this.parentElement.parentElement.parentElement.remove();
+   inputElement.value = editBtn.parentElement.parentElement.children[1].innerHTML;
+   editBtn.parentElement.parentElement.parentElement.remove();
  }
 
 //function to add eventListener to edit and delete button
-function addEventObject () {
+    function addEventObject () {
     const buttonCollection = document.querySelectorAll('.delete-btn');
     console.log(buttonCollection);
     const lastButton = buttonCollection[buttonCollection.length - 1];
